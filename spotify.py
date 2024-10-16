@@ -66,13 +66,6 @@ def tableCreation():
             release_date DATE
         )'''
     )
-
-    # Créer la table 'countries'
-
-    # cur.execute('DROP TABLE IF EXISTS countries CASCADE')
-
-    # Créer la table 'rank'
-    # cur.execute('DROP TABLE IF EXISTS dailyrankings')
     cur.execute('''
         CREATE TABLE IF NOT EXISTS dailyrankings (
             id SERIAL PRIMARY KEY,
